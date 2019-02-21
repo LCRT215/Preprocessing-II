@@ -232,6 +232,7 @@ section.nav-container nav.nav-bar {
   margin-right: 20px;
   text-decoration: none;
   color: #212529;
+  font-size: 1.7rem;
 }
 @media ( max-width: 500px ) {
   .nav-bar a {
