@@ -4,18 +4,35 @@ section.nav-container {
   margin-top: 40px;
   display: flex;
   border-bottom: 2px dashed @navigation-border;
+  @media @mobile {
+    flex-direction: column;
+    padding: 0;
+  }
 
   h1 {
     width: 100%;
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
   }
   nav.nav-bar {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    @media @mobile {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
 
 .nav-bar p {
   margin-left: 20px;
   margin-right: 20px;
+  @media @mobile {
+    font-size: 1.7rem;
+    margin: 0 20px;
+  }
 }
