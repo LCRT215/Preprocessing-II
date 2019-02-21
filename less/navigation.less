@@ -24,15 +24,21 @@ section.nav-container {
     @media @mobile {
       display: flex;
       justify-content: center;
+      margin-bottom: 10px;
     }
   }
 }
 
-.nav-bar p {
+.nav-bar a {
   margin-left: 20px;
   margin-right: 20px;
+  text-decoration: none;
+  color: @shark;
   @media @mobile {
     font-size: 1.7rem;
-    margin: 0 20px;
+    margin: 0 25px;
+    &:hover {
+      color: @eastern-blue;
+    }
   }
 }

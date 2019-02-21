@@ -41,6 +41,10 @@
       }
     }
   }
+  .fun-bus {
+    padding: 20px 0;
+    border-bottom: 2px dashed @navigation-border;
+  }
 
   .inverse-content {
     padding-bottom: 30px;
@@ -63,9 +67,15 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    @media @mobile {
+      width: 98%;
+    }
     img {
       border-radius: 10px;
+
+      @media @mobile {
+        margin-left: px;
+      }
     }
   }
 
@@ -86,7 +96,7 @@
       @media @mobile {
         display: flex;
         flex-direction: column;
-        padding: 0 30px;
+        padding: 0 60px;
         width: auto;
       }
     }
