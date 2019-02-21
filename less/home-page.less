@@ -4,7 +4,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border: green 2px solid;
 
     @media @mobile {
       display: flex;
@@ -15,21 +14,23 @@
       padding-right: 1%;
 
       flex-direction: column;
-      border: red 2px solid;
+
       @media @mobile {
         display: flex;
         width: auto;
+        margin: 0;
       }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-      border: blue 2px solid;
+
       @media @mobile {
         display: flex;
         width: auto;
         align-items: center;
+        margin-top: 20px;
       }
 
       img {
@@ -74,9 +75,20 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        width: auto;
+      }
     }
   }
   .top-image {
