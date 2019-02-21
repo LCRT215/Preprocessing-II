@@ -4,18 +4,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: green 2px solid;
+
+    @media @mobile {
+      display: flex;
+    }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      flex-direction: column;
+      border: red 2px solid;
+      @media @mobile {
+        display: flex;
+        width: auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      border: blue 2px solid;
+      @media @mobile {
+        display: flex;
+        width: auto;
+        align-items: center;
+      }
 
       img {
         border-radius: 10px;
+        @media @mobile {
+          margin-left: 20px;
+        }
       }
     }
   }
@@ -23,7 +44,10 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
     .text-content {
       padding-left: 1%;
       padding-right: 0;
